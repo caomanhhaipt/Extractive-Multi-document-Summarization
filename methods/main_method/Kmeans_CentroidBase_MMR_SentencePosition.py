@@ -88,7 +88,7 @@ class Summarizer(object):
 
         return new_sents, object_sents
 
-    def mmr_summarizer(self, object_sents, index_sents):
+    def mmr_summarizer(self, object_sents, index_sents, mode="train", length_sentence=16):
         new_sents_mmr = []
 
         for item in index_sents:
@@ -99,7 +99,10 @@ class Summarizer(object):
 
         IDF_w = MMR.IDFs(new_sents_mmr)
 
-        summary = makeSummary(remaining_sents, best_sent, best_sent, len(new_sents_mmr) - 4, 0.6, IDF_w)
+        if mode == "train":
+            summary = makeSummary(remaining_sents, best_sent, best_sent, len(new_sents_mmr) - 4, 0.6, IDF_w)
+        else:
+            summary = makeSummary(remaining_sents, best_sent, best_sent, length_sentence, 0.6, IDF_w)
 
         mmr_summaries = []
         for item in summary:
@@ -140,7 +143,7 @@ class Summarizer(object):
 
         return new_indexs
 
-    def summary(self, sentences, text_sents, org_sents, last_indexs):
+    def summary(self, sentences, text_sents, org_sents, last_indexs, len_centroid=20, mode="train"):
         n_clusters = self.n_clusters
         len_sent = self.len_summary
 
@@ -151,9 +154,9 @@ class Summarizer(object):
         for item in object_sents:
             raw_sentences.append(item.getOGwords())
 
-        index_sents = self.centroid_summarizer(raw_sentences, new_sents, 20)
+        index_sents = self.centroid_summarizer(raw_sentences, new_sents, len_centroid)
 
-        mmr_summaries = self.mmr_summarizer(object_sents, index_sents)
+        mmr_summaries = self.mmr_summarizer(object_sents, index_sents, mode)
 
         final_index = self.add_position(new_sents, mmr_summaries, len_sent, index_sents, n_clusters)
 
