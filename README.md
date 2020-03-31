@@ -5,3 +5,5 @@ by Hai Cao Manh, Huong Le Thanh and Tuan Luu Minh.
 
 ## Installation
 
+1. Clone this repository.
+2. Ensure packages are installed using pip install -r requirements.txt.
