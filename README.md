@@ -33,5 +33,5 @@ Notice: if you get an error, you can try running the source code directly with t
 
 ```shell
 # Running directly from the repository:
-test.py --cluster="cluster" --number_sentence_with_centroid="number_sentence_with_centroid --number_sentence_with_mmr="number_sentence_with_mmr" --path_to_data="path_to_folder"
+test.py --cluster="cluster" --number_sentence_with_centroid="number_sentence_with_centroid" --number_sentence_with_mmr="number_sentence_with_mmr" --path_to_data="path_to_folder"
 ```
