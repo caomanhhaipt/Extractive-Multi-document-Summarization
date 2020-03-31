@@ -16,7 +16,7 @@ We use a dataset DUC2007 that is a public dataset.
 
 we propose an approach to multi-document summarization based on k-means clustering algorithm, combining with centroid-based method, maximal marginal relevance and sentence positions
 
-<img src="https://github.com/caomanhhaipt/Extractive-Multi-document-Summarization-using-Kmeans-Centroid-based-Method-MMR-and-Position/blob/master/img/model.PNG" width="900">
+<img src="https://github.com/caomanhhaipt/Extractive-Multi-document-Summarization-using-Kmeans-Centroid-based-Method-MMR-and-Position/blob/master/img/model.PNG" width="800">
 
 
 ## Generate summaries from dataset
