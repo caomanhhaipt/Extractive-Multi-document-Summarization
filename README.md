@@ -6,7 +6,18 @@ by Hai Cao Manh, Huong Le Thanh and Tuan Luu Minh.
 ## Installation
 
 1. Clone this repository.
-2. Ensure packages are installed using pip install -r requirements.txt.
+2. Ensure packages are installed using "pip install -r requirements.txt".
+
+## Dataset
+
+We use a dataset DUC2007 that is a public dataset.
+
+## Model
+
+we propose an approach to multi-document summarization based on k-means clustering algorithm, combining with centroid-based method, maximal marginal relevance and sentence positions
+
+<img src="https://github.com/caomanhhaipt/Extractive-Multi-document-Summarization-using-Kmeans-Centroid-based-Method-MMR-and-Position/blob/master/img/model.PNG" width="900">
+
 
 ## Generate summaries from dataset
 
