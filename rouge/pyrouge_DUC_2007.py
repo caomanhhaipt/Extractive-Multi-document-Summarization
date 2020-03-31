@@ -1,17 +1,11 @@
 from pyrouge import Rouge155
 import time
-import argparse
 from definitions import ROOT_DIR
 start_time = time.time()
 
 if __name__ == "__main__":
     root_directory = ROOT_DIR
     rouge_dir = root_directory + '/rouge/ROUGE-1.5.5'
-
-    parser = argparse.ArgumentParser()
-
-    parser.add_argument('--system_folder', help='The folder has saved the summary')
-    args = parser.parse_args()
 
     system_folder = "test"
 
