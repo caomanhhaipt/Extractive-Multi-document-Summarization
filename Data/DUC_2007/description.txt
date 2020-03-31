@@ -1,0 +1,9 @@
+Data folder structure
+
+|DUC_2007
+|--Documents
+|--Human_Summaries
+
+
+Notice: + model_filename_pattern = 'summary_#ID#.[A-Z].1.txt'   (Human_Summaries)
+        + system_filename_pattern = 'D07(\d+)[A-Z].(\w+)'       (Documents)
