@@ -10,7 +10,7 @@ by Hai Cao Manh, Huong Le Thanh and Tuan Luu Minh.
 
 ## Dataset
 
-We use a dataset DUC2007 that is a public dataset.
+We use a dataset DUC2007 that is a famous dataset for text summarization.
 
 ## Model
 
