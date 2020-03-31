@@ -15,15 +15,16 @@ by Hai Cao Manh, Huong Le Thanh and Tuan Luu Minh.
 methods/main_method/Kmeans_CentroidBase_MMR_SentencePosition.py --folder_to_save="folder"
 
 Notice: if you get a path error, the following command may be helpful:
-```shell
 # Running directly from the repository:
 export PYTHONPATH=.
+```
 
 ## Evalute results via rouge
 
-Please replace "test" in the "system_folder" variable with system folder (ex. "folder")
+Please replace "test" in the "system_folder" variable with system folder (ex. "folder").
 ```shell
 # Running directly from the repository:
 rouge/pyrouge_DUC_2007.py
 
-Notice: if you get an error, you can try running the source code directly with the Pycharm IDE
+Notice: if you get an error, you can try running the source code directly with the Pycharm IDE.
+```
