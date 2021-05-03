@@ -2,6 +2,7 @@
 
 Python implementation of Extractive Multi-document Summarization as described in [Extractive Multi-document Summarization using K-means, Centroid-based Method, MMR, and Sentence Position](https://dl.acm.org/doi/pdf/10.1145/3368926.3369688)
 by Hai Cao Manh, Huong Le Thanh and Tuan Luu Minh.
+(In addition, the paper is also available at [our drive](https://drive.google.com/file/d/1BAm61W3UQ1tQzsgY0CScw73BtVWG9xFK/view?usp=sharing))
 
 ## Installation
 
